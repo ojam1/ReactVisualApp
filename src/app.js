@@ -11,7 +11,7 @@ const store = configureStore();
 const jsx = (
   <Provider store={store}>
     <div>
-      <WelcomePage />
+      <WelcomePage className='center-container' />
     </div>
   </Provider>
 );
