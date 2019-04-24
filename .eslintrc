@@ -1,14 +1,21 @@
 {
-  "parserOptions": {
-    "ecmaVersion": 7,
-    "sourceType": "script",
-    "ecmaFeatures": {
-      "jsx": true
-    }
+  "env": {
+    "browser": true,
+    "node": true
   },
+  "parser": "babel-eslint",
   "extends": [
-    "rallycoding",
-    "plugin:jest/recommended",
-    "plugin:prettier/recommended"
-  ]
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended",
+    "plugin:jest/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "jsx": true
+    },
+    "sourceType": "module"
+  }
 }

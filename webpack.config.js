@@ -17,10 +17,6 @@ module.exports = env => {
         }
       ]
     },
-    devtool: env === 'production' ? 'source-map' : 'inline-source-map',
-    devServer: {
-      contentBase: path.join(__dirname, 'public'),
-      historyApiFallback: true
-    }
+    devtool: env === 'production' ? 'source-map' : 'inline-source-map'
   };
 };

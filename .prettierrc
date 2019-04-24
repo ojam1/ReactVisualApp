@@ -12,7 +12,9 @@
   "overrides": [
     {
       "files": ".*rc",
-      "options": { "parser": "json" }
+      "options": {
+        "parser": "json"
+      }
     }
   ]
 }
