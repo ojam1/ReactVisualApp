@@ -4,7 +4,7 @@ import { applyMiddleware, combineReducers, compose, createStore } from 'redux';
 import playerReducer from '../reducers/player';
 
 export default () => {
-  const store = createStore(
+  return createStore(
     combineReducers({
       player: playerReducer
     }),
@@ -14,6 +14,4 @@ export default () => {
         window.__REDUX_DEVTOOLS_EXTENSION__()
     )
   );
-
-  return store;
 };
